@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container" id="container">
+            <div class="background">
+                <div>
+                    <img class="background__left" src="./img/Vector-left.svg" alt="">
+                </div>
+                <div>
+                    <img class="background__right" src="./img/Vector-right.svg" alt="">
+                </div>
+            </div>
+            <header>
+                <a href="#">
+                    <img class="header__logo" src="img/Group 2651.svg" alt="logo">
+                </a>
+            </header>
+        
+            <section class="subheader">
+                <h1 class="subheader__title">Under Construction</h1>
+                <div class="subheader__subtitle">We're making lots of improvements and will be back soon</div>
+            </section>
+        
+            <section class="timer">
+                <div class="timer__wrapper">
+                    <div class="timer__section">
+                        <div class="timer__text days"></div>
+                        <div class="timer__tab">
+                            <div class="timet__tab__text deskt">Days</div>
+                            <div class="timet__tab__text mob">DD</div>
+                        </div>
+                    </div>
+                    <div class="timer__section">
+                        <div class="timer__text hours"></div>
+                        <div class="timer__tab">
+                            <div class="timet__tab__text deskt">Hours</div>
+                            <div class="timet__tab__text mob">HH</div>
+                        </div>
+                    </div>
+                    <div class="timer__section">
+                        <div class="timer__text minutes"></div>
+                        <div class="timer__tab">
+                            <div class="timet__tab__text deskt">Minutes</div>
+                            <div class="timet__tab__text mob">MM</div>
+                        </div>
+                    </div>
+                    <div class="timer__section">
+                        <div class="timer__text seconds"></div>
+                        <div class="timer__tab">
+                            <div class="timet__tab__text deskt">Seconds</div>
+                            <div class="timet__tab__text mob">SS</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="checkEvents">
+                <div class="checkEvents__subheader">Check our event page when you wait:</div>
+                <button class="checkEvents__button btn" onclick="document.location='https://leadentrepreneursummit.com/'">
+                    <div class="checkEvents__button__text">Go to the event</div>
+                    <img src="./img/arrow-right.svg" alt="arrow-right">
+                </button>
+            </section>
+        
+            <div class="overlay">
+                <div class="modal">
+                    <div class="modal__close"></div>
+                    <div class="modal__title">SUCCESS!</div>
+                    <div class="modal__subtitle">You have successfully subscribed to the email newsletter</div>
+                    <button class="modal__button btn">Close</button>
+                </div>
+            </div>
+        
+            <footer>
+                <form id="form" method="POST" action="https://formspree.io/f/xjvdqqwo">
+                    <input id="email" type="text" name="email" value="" placeholder="Enter your Email and get notified" class="input">
+                    <button class="footer__button btn" type="submit"><img src="./img/arrow-right.svg" alt="arrow-right"></button>
+                </form>
+                <div class="footer__events"><a class="footer__events__link" href="#events">Other Events<img class="footer__events__arrow" src="./img/arrow-right.svg" alt="arrow-right"></a></div>
+            </footer>
+
+            <section class="events" id="events">
+                <div class="events__header">All events</div>
+                <div class="events__slider">
+                    <div class="slide active" style="background-image: url('img/event.jpg');">
+                        <div class="slide__title">
+                            <div class="slide__title_number">01</div>
+                            <div class="slide__title_name">Hawaiian party</div>
+                        </div>
+                        <div class="slide__descr">
+                            <div class="slide__descr_number">01</div>
+                            <div class="slide__descr_header">Hawaiian party</div>
+                            <div class="slide__descr_date">13.02.2023</div>
+                            <button class="slide__descr_button btn" onclick="document.location='https://leadentrepreneursummit.com/'">More information</button>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: url('img/mafia_party.jpg');">
+                        <div class="slide__title">
+                            <div class="slide__title_number">02</div>
+                            <div class="slide__title_name">Mafia party</div>
+                        </div>
+                        <div class="slide__descr">
+                            <div class="slide__descr_number">02</div>
+                            <div class="slide__descr_header">Mafia party</div>
+                            <div class="slide__descr_date">13.02.2023</div>
+                            <button class="slide__descr_button btn" onclick="document.location='https://leadentrepreneursummit.com/'">More information</button>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: url('img/party.jpg');">
+                        <div class="slide__title">
+                            <div class="slide__title_number">03</div>
+                            <div class="slide__title_name">Party</div>
+                        </div>
+                        <div class="slide__descr">
+                            <div class="slide__descr_number">03</div>
+                            <div class="slide__descr_header">Party</div>
+                            <div class="slide__descr_date">13.02.2023</div>
+                            <button class="slide__descr_button btn" onclick="document.location='https://leadentrepreneursummit.com/'">More information</button>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: url('img/party_on_the_beach.jpeg');">
+                        <div class="slide__title">
+                            <div class="slide__title_number">04</div>
+                            <div class="slide__title_name">Party on the beach</div>
+                        </div>
+                        <div class="slide__descr">
+                            <div class="slide__descr_number">04</div>
+                            <div class="slide__descr_header">Party on the beach</div>
+                            <div class="slide__descr_date">13.02.2023</div>
+                            <button class="slide__descr_button btn" onclick="document.location='https://leadentrepreneursummit.com/'">More information</button>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: url('img/glass-cube-house.jpg');">
+                        <div class="slide__title">
+                            <div class="slide__title_number">05</div>
+                            <div class="slide__title_name">Home Security</div>
+                        </div>
+                        <div class="slide__descr">
+                            <div class="slide__descr_number">05</div>
+                            <div class="slide__descr_header">Home security</div>
+                            <div class="slide__descr_date">13.02.2023</div>
+                            <button class="slide__descr_button btn" onclick="document.location='https://leadentrepreneursummit.com/'">More information</button>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: url('img/Network\ Design\ &\ Implementation.jpg');">
+                        <div class="slide__title">
+                            <div class="slide__title_number">06</div>
+                            <div class="slide__title_name">Network Design & Implementation</div>
+                        </div>
+                        <div class="slide__descr">
+                            <div class="slide__descr_number">06</div>
+                            <div class="slide__descr_header">Network Design & Implementation</div>
+                            <div class="slide__descr_date">13.02.2023</div>
+                            <button class="slide__descr_button btn" onclick="document.location='https://leadentrepreneursummit.com/'">More information</button>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: url('img/System\ Design.jpg');">
+                        <div class="slide__title">
+                            <div class="slide__title_number">07</div>
+                            <div class="slide__title_name">System Design & Engineering</div>
+                        </div>
+                        <div class="slide__descr">
+                            <div class="slide__descr_number">07</div>
+                            <div class="slide__descr_header">System Design & Engineering</div>
+                            <div class="slide__descr_date">13.02.2023</div>
+                            <button class="slide__descr_button btn" onclick="document.location='https://leadentrepreneursummit.com/'">More information</button>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: url('img/Client_CarePlans.jpg');">
+                        <div class="slide__title">
+                            <div class="slide__title_number">08</div>
+                            <div class="slide__title_name">Client Care Plans</div>
+                        </div>
+                        <div class="slide__descr">
+                            <div class="slide__descr_number">08</div>
+                            <div class="slide__descr_header">Client Care Plans</div>
+                            <div class="slide__descr_date">13.02.2023</div>
+                            <button class="slide__descr_button btn" onclick="document.location='https://leadentrepreneursummit.com/'">More information</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
